@@ -1,6 +1,6 @@
 <script>
     import Card from "$lib/Card.svelte";
-    import shuffle from "lodash/shuffle"; 
+    import { shuffle } from "lodash-es"; 
     import { fade } from "svelte/transition";
 
     let content = ['java', 'c', 'html', 'python', 'css', 'js', 'c#', 'c++', 'ruby', 'perl', 'swift', 'assembler', 'scratch', 'brainfuck', 'rust', 'php', 'kotlin', 'pascal', 'sql', 'go', 'fortran', 'typescript', 'dart', 'solidity'];
