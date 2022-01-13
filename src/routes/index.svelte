@@ -63,7 +63,7 @@
     <div class="flex flex-col items-center justify-center flex-grow overflow-auto">
         {#if diffSelected}
             {#if !won}
-                <div class="grid grid-cols-{2 * (difficulty + 2)} gap-2">
+                <div class="grid gap-2" style="grid-template-columns: repeat({2 * (difficulty + 2)}, minmax(0, 1fr));">
                     {#each cards as card}
                         <Card hodnota={card} on:click={click} />
                     {/each}
